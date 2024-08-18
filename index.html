@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS | Home</title>
+    <!-- icon -->
+    <link rel="icon" href="images/logo.png">
+    <!-- css file linking here -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- icons linking here -->
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+
+
+  </head>
+  <body>
+    <div class="container">
+      <!-- example 01 -->
+      <h2 class="text-danger">01. Click the button to show text</h2>
+      <button type="button" class="btn btn-dark" onclick="showText01()">Show Text</button>
+      <h3 id="s_text01"></h3>
+      <hr>
+      <!-- example 02 -->
+      <h2 class="text-danger">02. Click the button to show Date & Time</h2>
+      <button type="button" class="btn btn-dark" onclick="showText02()">Show Date & Time</button>
+      <h3 id="s_text02"></h3>
+      <hr>
+      <!-- example 03 -->
+      <h2 class="text-danger">03. Click the button to turn on-off the blub</h2>
+      <button type="button" class="btn btn-dark" onclick="bulbOn()">Bulb On</button>
+      <button type="button" class="btn btn-dark" onclick="bulbOff()">Bulb Off</button>
+      <img id="img" src="images/bulboff.gif" alt="">
+      <hr>
+
+      <!-- example 04 -->
+      <h2 class="text-danger">04. Click the button to turn on-off the blub</h2>
+      <button type="button" class="btn btn-dark" onmouseenter="bulbOn1()">Bulb On</button>
+      <button type="button" class="btn btn-dark" onmouseenter="bulbOff1()">Bulb Off</button>
+      <img id="img1" src="images/bulboff.gif" alt="">
+      <hr>
+
+
+
+      <!-- example 05 -->
+      <h2 class="text-danger">05. Click the button to turn day-night view </h2>
+      <button type="button" class="btn btn-dark" onclick="day()">Day View</button>
+      <button type="button" class="btn btn-dark" onclick="night()">Night View</button>
+      <img id="img2" src="images/day.jpg" alt="">
+      <hr>
+
+      <!-- example 06 -->
+      <h2 class="text-danger">06.Click the button to change the style</h2>
+      <button type="button" class="btn btn-dark" onclick="styleChange()">Style Change</button>
+      <h3 id="css">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3> 
+      <hr>
+
+      <!-- example 07 -->
+      <h2 class="text-danger">07.Click the button to change the font-size</h2>
+      <button type="button" class="btn btn-dark" onclick="fontSize()">Style Change</button>
+      <h3 id="css2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3> 
+      <hr>
+
+      <!-- example 08 -->
+      <h2 class="text-danger">08.Click the button to show/hide the content</h2>
+      <button type="button" class="btn btn-dark" onclick="showContent()">Show Content</button>
+      <button type="button" class="btn btn-dark" onclick="hideContent()">Hide Content</button>
+      <h3 id="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3> 
+      <hr>
+
+      <!-- example 09 -->
+      <h2 class="text-danger">09.Click the button to show the result</h2>
+      <h3>Let x, y, z;</h3>
+      <h3>x = 5;</h3>
+      <h3>y = 7;</h3>
+      <button type="button" class="btn btn-dark" onclick="add()">Addition Result</button>
+      <h3 id="addition"></h3>
+      <hr>
+
+      <!-- example 10 -->
+      <h2 class="text-danger">10.Click the button to show the result</h2>
+      <h3>Let x, y, z;</h3>
+      <h3>x = 15;</h3>
+      <h3>y = 13;</h3>
+      <button type="button" class="btn btn-dark" onclick="multiply()">Multification Result</button>
+      <h3 id="multi"></h3>
+      <hr>
+      
+
+      <!-- example 11 -->
+      <h2 class="text-danger">11.Click the button to show the result</h2>
+      <h3>Let x, y, z;</h3>
+      <h3>x = 255;</h3>
+      <h3>y = 15;</h3>
+      <button type="button" class="btn btn-dark" onclick="divide()">Division Result</button>
+      <h3 id="division"></h3>
+      <hr>
+
+
+      <!-- example 12 -->
+      <h2 class="text-danger">12.Click the button to print the current page.</h2>
+      <h3>The window.print() Method</h3>
+      <button onclick="window.print()">Print this page</button>
+      <hr>
+
+      <!-- example 13 -->
+      <h2 class="text-danger">13.The var Keyword Creates Variables</h2>
+      <h3>Var x, y;</h3>
+      <h3>x = 5 + 6;</h3>
+      <h3>y = x * 10;</h3>
+      <button type="button" class="btn btn-dark" onclick="result()"> Result</button>
+      <h3 id="var"></h3>
+      <hr>
+
+      <!-- example 14 -->
+      <h2 class="text-danger">14.Click the button to show the result</h2>
+      <h3>Let x, y, z;</h3>
+      <h3>x = 16345;</h3>
+      <h3>y = 79;</h3>
+      <button type="button" class="btn btn-dark" onclick="modulus()"> Result</button>
+      <h3 id="modu"></h3>
+      <hr>
+
+      <!-- example 15 -->
+      <h2 class="text-danger">15.Click the button to repeat the text</h2>
+      <h3>WelCome to SS</h3>
+      <button type="button" class="btn btn-dark" onclick="dataRepeat()">Repeat</button>
+      <h3 id="rep">Data repeat</h3>
+      <hr>
+
+      <!-- example 16 -->
+      <h2 class="text-danger">16.Click the button to show the result</h2>
+      <h3>number1 = 10;</h3>
+      <h3>number2 = 3;</h3>
+      <button type="button" class="btn btn-dark" onclick="dataRes()">Result</button>
+      <h3 id="res">Value is</h3>
+      <hr>
+      
+      <!-- example 17 -->
+      <h2 class="text-danger">17.Click the button to show the result</h2>
+      <h3>number3 = 10;</h3>
+      <h3>number4 = 3;</h3>
+      <button type="button" class="btn btn-dark" onclick="dataRes1()">Result</button>
+      <h3 id="res1">Value is</h3>
+      <hr>
+
+      <!-- example 18 -->
+      <h2 class="text-danger">18.JavaScript Hoisting</h2>
+      <h3>With <b>var</b>, you can use a variable before it is declared</h3>
+      <button type="button" class="btn btn-dark" onclick="car()">Car Name</button>
+      <h3 id="carname"></h3>
+      <hr>
+
+      <!-- example 19 -->
+      <h2 class="text-danger">19.JavaScript const</h2>
+      <h3>Declaring a constant array does NOT make the elements unchangeable:</h3>
+      <button type="button" class="btn btn-dark" onclick="car1()">Car Name</button>
+      <h3 id="car"></h3>
+      <hr>
+
+      <!-- example 20 -->
+      <h2 class="text-danger">20.Click the button to show the result</h2>
+      <h3>number5 = 20;</h3>
+      <h3>number6 = 20;</h3>
+      <h3>Is number5 equals to number6 ? </h3>
+      <button type="button" class="btn btn-dark" onclick="dataRes2()">Result</button>
+      <h3 id="res2">Value is</h3>
+      <hr>
+
+      <!-- example 21 -->
+      <h2 class="text-danger">21.Click the button to show the result</h2>
+      <h3>number7 = 20;</h3>
+      <h3>number8 = 19;</h3>
+      <h3>Is number7 equals to number8 ? </h3>
+      <button type="button" class="btn btn-dark" onclick="dataRes3()">Result</button>
+      <h3 id="res3">Value is</h3>
+      <hr>
+
+      <!-- example 22 -->
+      <h2 class="text-danger">22.Arithmetic Operations</h2>
+      <h3>A typical arithmetic operation takes two numbers (or expressions) and produces a new number</h3>
+      <h3>let a = 3;</h3>
+      <h3>x = (100 + 50) * a;</h3>
+      <button type="button" class="btn btn-dark" onclick="arithmetic()">Result</button>
+      <h3 id="arith">Value is</h3>
+      <hr>
+
+      <!-- example 23 -->
+      <h2 class="text-danger">23.The += Operator</h2>
+      <h3>var x = 10;</h3>
+      <h3>x += 5;</h3>
+      <button type="button" class="btn btn-dark" onclick="arithmetic1()">Result</button>
+      <h3 id="arith1">Value is</h3>
+      <hr>
+
+      <!-- example 24 -->
+      <h2 class="text-danger">24.The +Operator</h2>
+      <h3>The + operator concatenates (adds) strings.</h3>
+      <button type="button" class="btn btn-dark" onclick="concatenates()">Result</button>
+      <h3 id="concat"></h3>
+      <hr>
+
+      <!-- example 25 -->
+      <h2 class="text-danger">25.The -- Operator</h2>
+      <h3>let x = 5;</h3>
+      <h3>x--;</h3>
+      <button type="button" class="btn btn-dark" onclick="arithmetic2()">Result</button>
+      <h3 id="arith2"></h3>
+      <hr>
+
+      <!-- example 26 -->
+      <h2 class="text-danger">26.The ** Operator</h2>
+      <h3>let x = 5;</h3>
+      <h3>x ** 2 = ?</h3>
+      <button type="button" class="btn btn-dark" onclick="arithmetic3()">Result</button>
+      <h3 id="arith3"></h3>
+      <hr>
+
+      <!-- example 27 -->
+      <h2 class="text-danger">27.Operator Precedence</h2>
+      <h3>Multiplication has precedence over addition</h3>
+      <h3>let x = 100 + 50 * 8 = ?</h3>
+      <button type="button" class="btn btn-dark" onclick="precedence()">Result</button>
+      <h3 id="pre"></h3>
+      <hr>
+
+
+      <!-- example 28 -->
+      <h2 class="text-danger">28.Operator Precedence 02</h2>
+      <h3>Multiplication has precedence over addition</h3>
+      <h3>let x = 100 * 50 - 8 = ?</h3>
+      <button type="button" class="btn btn-dark" onclick="precedence02()">Result</button>
+      <h3 id="pre02"></h3>
+      <hr>
+
+      <!-- example 29 -->
+      <h2 class="text-danger">29.Operator Precedence 03</h2>
+      <h3>Multiplication has precedence over addition</h3>
+      <h3>let x = 100 / 50 * 3;</h3>
+      <button type="button" class="btn btn-dark" onclick="precedence03()">Result</button>
+      <h3 id="pre03"></h3>
+      <hr>
+
+      <!-- example 30 -->
+      <h2 class="text-danger">30.The -= Operator</h2>
+      <h3>let x = 10;</h3>
+      <h3>x -= 5;</h3>
+      <button type="button" class="btn btn-dark" onclick="arithmetic4()">Result</button>
+      <h3 id="arith4"></h3>
+      <hr>
+
+      <!-- example 31 -->
+      <h2 class="text-danger">31.The *= Operator</h2>
+      <h3>let x = 60;</h3>
+      <h3>x *= 5;</h3>
+      <button type="button" class="btn btn-dark" onclick="arithmetic5()">Result</button>
+      <h3 id="arith5"></h3>
+      <hr>
+
+      <!-- example 32 -->
+      <h2 class="text-danger">32.The **= Operator</h2>
+      <h3>let x = 25;</h3>
+      <h3>x **= 5;</h3>
+      <button type="button" class="btn btn-dark" onclick="arithmetic6()">Result</button>
+      <h3 id="arith6"></h3>
+      <hr>
+
+      <!-- example 33 -->
+      <h2 class="text-danger">33.The /= Operator</h2>
+      <h3>let x = 25;</h3>
+      <h3>x /= 5;</h3>
+      <button type="button" class="btn btn-dark" onclick="arithmetic7()">Result</button>
+      <h3 id="arith7"></h3>
+      <hr>
+
+      <!-- example 34 -->
+      <h2 class="text-danger">34.The %= Operator</h2>
+      <h3>let x = 26;</h3>
+      <h3>x %= 5;</h3>
+      <button type="button" class="btn btn-dark" onclick="arithmetic8()">Result</button>
+      <h3 id="arith8"></h3>
+      <hr>
+
+      <!-- example 35 -->
+      <h2 class="text-danger">35.The <<= Operator</h2>
+      <h3>let x = -100;</h3>
+      <h3>x <<= 5;</h3>
+      <button type="button" class="btn btn-dark" onclick="arithmetic9()">Result</button>
+      <h3 id="arith9"></h3>
+      <hr>
+
+      <!-- example 36 -->
+      <h2 class="text-danger">36.The >>= Operator</h2>
+      <h3>let x = -100;</h3>
+      <h3>x >>= 5;</h3>
+      <button type="button" class="btn btn-dark" onclick="arithmetic10()">Result</button>
+      <h3 id="arith10"></h3>
+      <hr>
+
+      <!-- example 37 -->
+      <h2 class="text-danger">37.The >>>= Operator</h2>
+      <h3>let x = -100;</h3>
+      <h3>x >>>= 5;</h3>
+      <button type="button" class="btn btn-dark" onclick="arithmetic11()">Result</button>
+      <h3 id="arith11"></h3>
+      <hr>
+
+      <!-- example 38 -->
+      <h2 class="text-danger">38.The &= Operator</h2>
+      <h3>let x = 10;</h3>
+      <h3>x >>>= 5;</h3>
+      <button type="button" class="btn btn-dark" onclick="arithmetic12()">Result</button>
+      <h3 id="arith12"></h3>
+      <hr>
+
+      <!-- example 39 -->
+      <h2 class="text-danger">39.The |= Operator</h2>
+      <h3>let x = 10;</h3>
+      <h3>x |= 5;</h3>
+      <button type="button" class="btn btn-dark" onclick="arithmetic13()">Result</button>
+      <h3 id="arith13"></h3>
+      <hr>
+
+      <!-- example 40 -->
+      <h2 class="text-danger">40.The ^= Operator</h2>
+      <h3>let x = 100;</h3>
+      <h3>x ^= 5;</h3>
+      <button type="button" class="btn btn-dark" onclick="arithmetic14()">Result</button>
+      <h3 id="arith14"></h3>
+      <hr>
+
+      <!-- example 41 -->
+      <h2 class="text-danger">41.The &&= Operator</h2>
+      <h3>let x = 10;</h3>
+      <h3>x &&= 5;</h3>
+      <button type="button" class="btn btn-dark" onclick="arithmetic15()">Result</button>
+      <h3 id="arith15"></h3>
+      <hr>
+
+      <!-- example 42 -->
+      <h2 class="text-danger">42.The ||= Operator</h2>
+      <h3>let x = 250;</h3>
+      <h3>x ||= 25;</h3>
+      <button type="button" class="btn btn-dark" onclick="arithmetic16()">Result</button>
+      <h3 id="arith16"></h3>
+      <hr>
+
+      <!-- example 43 -->
+      <h2 class="text-danger">43.The ??= Operator</h2>
+      <h3>let x;</h3>
+      <h3>x ??= 5;</h3>
+      <button type="button" class="btn btn-dark" onclick="arithmetic17()">Result</button>
+      <h3 id="arith17"></h3>
+      <hr>
+
+      <!-- example 44 -->
+      <h2 class="text-danger">44.JavaScript Data Types</h2>
+      <h4>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</h4>
+      <h3>let x;         // Now x is undefined</h3>
+      <h3>x = 5;         // Now x is a Number</h3>
+      <h3>x = "John";    // Now x is a String</h3>
+      <button type="button" class="btn btn-dark" onclick="arithmetic18()">Result</button>
+      <h3 id="arith18"></h3>
+      <hr>
+
+      <!-- example 45 -->
+      <h2 class="text-danger">45.JavaScript Strings</h2>
+      <h4>JStrings are written with quotes. You can use single or double quotes:</h4>
+      <h3>carName1 = "Volvo XC60";</h3>
+      <h3>carName2 = "Volvo XC60";</h3>
+      <button type="button" class="btn btn-dark" onclick="jqstring()">Result</button>
+      <h3 id="string"></h3>
+      <hr>
+
+      <!-- example 46 -->
+      <h2 class="text-danger">46.JavaScript Strings</h2>
+      <h4>JStrings are written with quotes. You can use single or double quotes:</h4>
+      <h3>answer1 = "It's alright";</h3>
+      <h3>answer2 = "He is called 'Johnny'";</h3>
+      <h3>answer3 = 'He is called "Johnny"';</h3>
+      <button type="button" class="btn btn-dark" onclick="jqstring01()">Result</button>
+      <h3 id="string01"></h3>
+      <hr>
+
+      <!-- example 47 -->
+      <h2 class="text-danger">47.JavaScript Numbers</h2>
+      <h4>Numbers can be written with, or without decimals.</h4>
+      <h3>x1 = 34.00;</h3>
+      <h3>x2 = 34;</h3>
+      <h3>x3 = 3.14;</h3>
+      <button type="button" class="btn btn-dark" onclick="jqnumber()">Result</button>
+      <h3 id="num"></h3>
+      <hr>
+
+      <!-- example 48 -->
+      <h2 class="text-danger">48.JavaScript Numbers</h2>
+      <h3>y = 123e5;    // 12300000</h3>
+      <h3>z = 123e-5;   // 0.00123</h3>
+      <button type="button" class="btn btn-dark" onclick="jqnumber01()">Result</button>
+      <h3 id="num01"></h3>
+      <hr>
+
+      <!-- example 49 -->
+      <h2 class="text-danger">49.JavaScript Objects</h2>
+      <h3>const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};</h3>
+      <button type="button" class="btn btn-dark" onclick="jqobj()">Result</button>
+      <h3 id="obj"></h3>
+      <hr>
+
+      <!-- example 50 -->
+      <h2 class="text-danger">50.JavaScript Operator</h2>
+      <h4>Variables can be emptied if you set the value to <b>undefined</h4>
+      <h3>// Value is undefined, type is undefined</h3>
+      <button type="button" class="btn btn-dark" onclick="jqtype()">Result</button>
+      <h3 id="type01"></h3>
+      <hr>
+ 
+
+    </div>
+
+
+    <!-- script file linking here -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
